@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>TranzactCard</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="./css/styles.css" />
+    <script id="applicationScript" type="text/javascript" src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
-    <h1>this is my header</h1>
+
+    <header>
+        <!-- MOBILE RESPONSIVE NAVBAR -->
+        <nav class="nav-bar">
+            <ul>
+                <li class="logo"><img class="logo-img" src="./assets/images/TranzactCard Logo 1.png" width="200px" alt="TranzactCard Logo" /></li>
+                <li class="nav-items"><a href="#">Home</a></li>
+                <li class="nav-items"><a href="#">Z-Club</a></li>
+                <li class="nav-items"><a href="#">TZT Account</a></li>
+                <li class="nav-items"><a href="#">Knowledge & Tools</a></li>
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            $(document).ready(function() {
+                $('.btn').click(function() {
+                    $('.items').toggleClass("show");
+                    $('ul li').toggleClass("hide");
+                });
+            });
+        </script>
+    </header>
+
+    <main class="main">
+        <!-- SECTION 1 - YOUR PORTAL TO NEW PROSPERITY -->
+        <section class="section section-1">
+            <div class="items items-1">
+                <h1 class="heading">Your portal to new prosperity.</h1>
+                <p>TranzactCard was created to empower millions of ordinary Americans with access to income and profits normally only available to banks and major financial institutions. It’s a redistribution of wealth that harms no one and benefits everyone.</p>
+                <p>When we say ordinary, we really mean extraordinary. And we also mean everyone. Minorities. Women. Men. Young people. Older people. The prosperous. The underbanked and underprivileged. Anyone who spends any amount of money. Anyone who wants
+                    more buying power with their available dollars. Anyone who wants more income.</p>
+            </div>
+
+            <div class="items">
+                <img class="section-image" src="./assets/images/TZT Image 1.png" width="500px" alt="TZT Card" />
+            </div>
+        </section>
+
+        <!-- SECTION 2 - DOUBLE YOUR BUYING POWER -->
+        <section class="section section-2">
+            <div class="items">
+                <img class="section-image" src="./assets/images/Zbucks_1@2x.png" width="400px" alt="TZT Z-Club" /></div>
+            <div class="items items-2">
+                <h3 class="heading-3">Double your buying power!</h3>
+                <p>For each dollar you spend with the TranzactCard you are awarded one Z-Buck. That is a true dollar-for-dollar value just for using your TranzactCard!</p>
+                <p>Z-Bucks can be used in our members-only marketplace, the Z-Club.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 3 - TZT ACCOUNT -->
+        <section class="section section-3">
+            <div class="items">
+                <h3 class="heading-3">Pay yourself first. <br/>Put your money to work.</h3>
+            </div>
+            <h4>TZT Account</h4>
+            <div id="The_TZT_Account_is_a_simple_ye">
+                <p>The TZT Account is a simple, yet effective way for members to engage in bank ownership, and bank ownership means the ability to earn dividends. On top of dividends, the TZT Account offers one of the highest interest rates available, allowing
+                    you an easy manner in which you can put your money to work. As your TZT Account balance increases so does your ability to continue on the path to new prosperity.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 4 -  RE-ENGINEERED FINANCIAL SYSTEM -->
+        <section class="section section-4">
+            <div id="Reengineered_financial_system_">
+                <h3 class="heading-3">We've re-engineered the financial system so the money flows to you.</h3>
+            </div>
+            <div id="As_a_TranzactCard_member_you_a">
+                <p>As a TranzactCard member you are instantly connected to the TranzactCard ecosystem so that you take advantage of every benefit, from the very first transaction. We have created automated services that strengthen your financial foundation
+                    and move you closer to your financial goals. You don’t need to do anything special on your end to take advantage of these benefits - simply use your TranzactCard.</p>
+            </div>
+            <div id="Changing_the_way_our_members_i">
+                <p>Changing the way our members interact with their money.</p>
+            </div>
+            <div id="Tranzact-Up">
+                <h4>Tranzact-Up</h4>
+            </div>
+            <div id="Each_time_you_make_a_purchase_">
+                <p>Each time you make a purchase with the TranzactCard, the transaction amount is rounded up to the nearest dollar, and the difference is automatically deposited into your TZT Account.</p>
+            </div>
+            <!-- <img id="Image_1" src="Image_1.png" srcset="Image_1.png 1x, Image_1@2x.png 2x">
+
+        <img id="Image_2" src="Image_2.png" srcset="Image_2.png 1x, Image_2@2x.png 2x"> -->
+
+            <div id="Tranzact-Back">
+                <h4>Tranzact-Back</h4>
+            </div>
+            <div>
+                <p>Better than cashback! The TranzactCard is automatically linked to a cashback system that includes nearly half a million merchants nationwide. Each time you use your TranzactCard at one of these merchants the cashback percentage is automatically
+                    deposited into your TZT Account.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 5 - FINANCIAL KNOWLEDGE AND TOOLS -->
+        <section class="section section-5">
+            <div>
+                <h3 class="heading-3">Get more of your life back!</h3>
+            </div>
+            <div>
+                <p>TranzactCard delivers the foundation of financial knowledge through it’s financial education platform. Valuable, real-life information is learned as you progress through our modules. But we don’t stop there. We also provide the necessary
+                    tools to put everything you learn into practice with our robust, personal finance management system. As your financial knowledge increases and your money starts working for you, the path to new prosperity becomes clear as you begin
+                    to take back your life and focus on what’s important to you.</p>
+            </div>
+            <div>
+                <p>Financial knowledge and tools that transform our members lives.</p>
+            </div>
+
+            <div>
+                <h4>Financial Education</h4>
+                <p>Working hand in hand, TranzactCard assists you in evaluating your current financial situation, and helps you create solutions for your short-term and long-term financial goals. The TranzactCard platform provides education specific to your
+                    needs, with topics ranging from debt management to creating additional income streams.</p>
+            </div>
+            <div>
+                <h4>Financial Tools</h4>
+                <p>TranzactCard provides powerful tools that give you the means to take control of your financial well-being. You can view all of your financial accounts in one place, with analytics that show exactly where your money is going. You can then
+                    use the tools at your disposal to create budgets, manage debt, and put your money to work for you. TranzactCard takes personal finance management to another level with cutting-edge solutions that give you the ability to save, manage,
+                    and make money.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 6 -  Z-CLUB -->
+    </main>
 </body>
+
 </html>

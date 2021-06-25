@@ -1,0 +1,13 @@
+{
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontWeight": "600",
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "window.zoomLevel": 0,
+    "editor.tabSize": 4,
+    "editor.fontSize": 13.50,
+    "editor.formatOnType": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.minimap.enabled": false,
+}

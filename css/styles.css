@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+nav {
+    padding: 5px 40px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0.75rem 0;
+    cursor: pointer;
+}
+
+nav ul li.nav-items {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+}
+
+nav ul li.nav-items:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #4bb941;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+nav ul li.nav-items:hover:after {
+    opacity: 1;
+    bottom: 8px;
+}
+
+nav ul li.logo {
+    flex: 1;
+    /* padding-top: .5rem; */
+}
+
+nav ul li a {
+    color: #494949;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+nav ul li:hover a {
+    color: #4bb941;
+}
+
+nav ul li i {
+    font-size: 23px;
+}
+
+nav ul li.btn {
+    display: none;
+}
+
+p {
+    color: #494949;
+    padding-bottom: 1.5rem;
+    width: 550px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 60px;
+    padding: 1.5rem 0;
+}
+
+.heading-3 {
+    font-size: 36px;
+    padding-bottom: 1.5rem;
+}
+
+.nav-bar {
+    padding: 0.5rem 2rem;
+}
+
+.section {
+    display: flex;
+    width: 100%;
+    max-width: 1180px;
+    padding: 3.5rem 0.5rem;
+}
+
+.section-1 {
+    padding-top: 5rem;
+}
+
+
+/* .section-image {
+    padding: 1rem;
+} */
+
+.items-2 {
+    padding: 0 0.5rem 0.5rem 2.5rem;
+}
+
+@media all and (max-width: 900px) {
+    nav {
+        padding: 5px 30px;
+    }
+    nav ul li.nav-items {
+        width: 100%;
+        display: none;
+    }
+    nav ul li.nav-items.show {
+        display: block;
+    }
+    nav ul li.btn {
+        display: block;
+    }
+    nav ul li.nav-items:hover {
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px #33ffff, inset 0 0 10px #66ffff;
+    }
+    nav ul li.nav-items:hover:after {
+        opacity: 0;
+    }
+}
