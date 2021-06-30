@@ -8,7 +8,6 @@
 
 nav {
     padding: 5px 40px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 nav ul {
@@ -81,6 +80,14 @@ p {
     width: 550px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2); */
+}
+
 .main {
     flex: 1;
     display: flex;
@@ -107,20 +114,15 @@ p {
     display: flex;
     width: 100%;
     max-width: 1180px;
-    padding: 3.5rem 0.5rem;
+    padding: 5rem 0.5rem;
 }
 
 .section-1 {
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 
-
-/* .section-image {
-    padding: 1rem;
-} */
-
 .items-2 {
-    padding: 0 0.5rem 0.5rem 2.5rem;
+    padding: 0 0.5rem 0.5rem 7.5rem;
 }
 
 @media all and (max-width: 900px) {

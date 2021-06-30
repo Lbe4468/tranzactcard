@@ -16,7 +16,7 @@
 
     <header>
         <!-- MOBILE RESPONSIVE NAVBAR -->
-        <nav class="nav-bar">
+        <nav id="navbar" class="nav-bar">
             <ul>
                 <li class="logo"><img class="logo-img" src="./assets/images/TranzactCard Logo 1.png" width="200px" alt="TranzactCard Logo" /></li>
                 <li class="nav-items"><a href="#">Home</a></li>
@@ -54,7 +54,7 @@
         <!-- SECTION 2 - DOUBLE YOUR BUYING POWER -->
         <section class="section section-2">
             <div class="items">
-                <img class="section-image" src="./assets/images/Zbucks_1@2x.png" width="400px" alt="TZT Z-Club" /></div>
+                <img class="section-image" src="./assets/images/Zbucks_1@2x.jpeg" width="450px" alt="TZT Z-Club" /></div>
             <div class="items items-2">
                 <h3 class="heading-3">Double your buying power!</h3>
                 <p>For each dollar you spend with the TranzactCard you are awarded one Z-Buck. That is a true dollar-for-dollar value just for using your TranzactCard!</p>
@@ -68,9 +68,12 @@
                 <h3 class="heading-3">Pay yourself first. <br/>Put your money to work.</h3>
             </div>
             <h4>TZT Account</h4>
-            <div id="The_TZT_Account_is_a_simple_ye">
+            <div>
                 <p>The TZT Account is a simple, yet effective way for members to engage in bank ownership, and bank ownership means the ability to earn dividends. On top of dividends, the TZT Account offers one of the highest interest rates available, allowing
                     you an easy manner in which you can put your money to work. As your TZT Account balance increases so does your ability to continue on the path to new prosperity.</p>
+            </div>
+            <div class="items">
+                <img class="section-image" src="./assets/images/TZT Account Circle.png" width="500px" alt="TZT Card" />
             </div>
         </section>
 
@@ -135,6 +138,24 @@
 
         <!-- SECTION 6 -  Z-CLUB -->
     </main>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
 </body>
 
 </html>
