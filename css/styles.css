@@ -97,7 +97,7 @@ p {
 
 .heading {
     font-size: 60px;
-    padding: 1.5rem 0;
+    padding: 10rem 0 0 0;
 }
 
 .heading-3 {
@@ -109,12 +109,25 @@ p {
     display: flex;
     width: 100%;
     max-width: 1180px;
-    padding: 5rem 0.5rem;
 }
 
 .section-1 {
-    padding-top: 10rem;
+    padding: 3rem 0.5rem;
+    justify-content: center;
 }
+
+.section-1-image {
+    padding: 0 0 0 2.5rem;
+}
+
+.items-1 {
+    padding-top: 2.5rem;
+}
+
+
+/* .section-1 {
+    padding-top: 10rem;
+} */
 
 .items-2 {
     padding: 0 0.5rem 0.5rem 7.5rem;
