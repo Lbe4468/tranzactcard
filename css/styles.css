@@ -9,30 +9,33 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     overflow-x: hidden;
 }
 
-article {
+
+/* article {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-}
+} */
 
-main {
+
+/* main {
     flex-grow: 1;
-}
+} */
 
 main p {
     font-size: 18px;
 }
 
-header,
+
+/* header,
 main,
 footer {
     flex-shrink: 0;
-}
+} */
 
 footer {
     display: flex;
