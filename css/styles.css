@@ -13,29 +13,26 @@ body {
     overflow-x: hidden;
 }
 
-
-/* article {
+article {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-} */
+}
 
-
-/* main {
+main {
     flex-grow: 1;
-} */
+}
 
 main p {
     font-size: 18px;
 }
 
-
-/* header,
+header,
 main,
 footer {
     flex-shrink: 0;
-} */
+}
 
 footer {
     display: flex;
@@ -214,7 +211,7 @@ hr.rounded {
 
 .items-4b {
     max-width: 525px;
-    margin: -4rem 0 4rem 0;
+    margin: -2rem 0 4rem 0;
     padding: 0 2rem;
 }
 
@@ -235,7 +232,7 @@ hr.rounded {
 
 .items-5b {
     max-width: 525px;
-    margin: -4rem 0 4rem 0;
+    margin: -2rem 0 4rem 0;
     padding: 0 2rem;
 }
 
@@ -357,7 +354,7 @@ hr.rounded {
         margin-top: 6rem;
     }
     .images {
-        width: 300px;
+        width: 275px;
         margin-top: 0.75rem;
         padding: 0.50rem 0 0 0;
     }
@@ -380,23 +377,48 @@ hr.rounded {
         display: flex;
         flex-direction: column-reverse;
     }
+    .section-3 img {
+        width: 250px;
+    }
     .section-4a {
         display: flex;
         flex-direction: column;
+    }
+    .section-4a p {
+        padding-bottom: 2rem;
     }
     .section-4b {
         display: flex;
         flex-direction: column;
     }
     .section-4b p {
-        padding: 1.5rem;
+        padding: 0.75rem 1.5rem 0rem 1.5rem;
+    }
+    .items-4b img {
+        width: 125px;
+    }
+    .section-5a {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .section-5a h3 {
+        margin-top: 1rem;
+    }
+    .section-5a img {
+        display: none;
+    }
+    .section-5a p {
+        padding-bottom: 2rem;
     }
     .section-5b {
         display: flex;
         flex-direction: column;
     }
     .section-5b p {
-        padding: 1.5rem;
+        padding: 0.75rem 1.5rem 0rem 1.5rem;
+    }
+    .section-5b img {
+        width: 120px;
     }
     .sticky {
         position: fixed;
