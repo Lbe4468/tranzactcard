@@ -1,207 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TranzactCard</title>
-    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="./css/styles.css" />
-    <script id="applicationScript" type="text/javascript" src="./js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <article>
         <header>
             <!-- MOBILE RESPONSIVE NAVBAR -->
-            <nav id="navbar" class="nav-bar">
-                <ul>
-                    <li class="logo"><img class="logo-img" src="./assets/images/TranzactCard Logo 1.png" height="22px" alt="TranzactCard Logo" /></li>
-                    <li class="nav-items"><a href="#">Home</a></li>
-                    <li class="nav-items"><a href="#">Z-Club</a></li>
-                    <li class="nav-items"><a href="#">TZT Account</a></li>
-                    <li class="nav-items"><a href="#">Knowledge & Tools</a></li>
-                    <li id="burger-menu" class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
-                </ul>
-            </nav>
-            <script>
-                $(document).ready(function() {
-                    $('.btn').click(function() {
-                        $('.nav-items').toggleClass("show");
-                        $('ul li').toggleClass("hide");
-                    });
-                });
-            </script>
+            <div class="navbar">
+                <a href="index.html"><img src="img/logo.svg" alt="TranzactCard Logo" class="logo"></a>
+
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <ul id="menu">
+                            <a href="index.html">
+                                <li><strong>Home</strong></li>
+                            </a>
+                            <a href="ZClub.html">
+                                <li><strong>Z-Club</strong></li>
+                            </a>
+                            <a href="TZTAccount.html">
+                                <li><strong>TZT Account</strong></li>
+                            </a>
+                            <a href="Knowledge.html">
+                                <li><strong>Knowledge & Tools</strong></li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+
+                <navb>
+                    <div id="navdesktop">
+                        <ul>
+                            <a href="index.html">
+                                <li><strong>Home</strong></li>
+                            </a>
+                            <a href="ZClub.html">
+                                <li><strong>Z-Club</strong></li>
+                            </a>
+                            <a href="TZTAccount.html">
+                                <li><strong>TZT Account</strong></li>
+                            </a>
+                            <a href="Knowledge.html">
+                                <li><strong>Knowledge & Tools</strong></li>
+                            </a>
+                        </ul>
+                    </div>
+                </navb>
+            </div>
         </header>
 
+
         <main class="main">
+
             <!-- SECTION 1 - YOUR PORTAL TO NEW PROSPERITY -->
-            <section class="section section-1">
-                <div class="items items-1">
-                    <h1 class="heading">Your portal to new prosperity</h1>
+            <section class="home-hero">
+                <div class="home-hero-textbox">
+                    <h1>Your portal to new prosperity.</h1>
                     <p>TranzactCard was created to empower millions of ordinary Americans with access to income and profits normally only available to banks and major financial institutions. It’s a redistribution of wealth that harms no one and benefits
                         everyone.
                     </p>
                     <p>When we say ordinary, we really mean extraordinary. And we also mean everyone. Minorities. Women. Men. Young people. Older people. The prosperous. The underbanked and underprivileged. Anyone who spends any amount of money. Anyone who
                         wants more buying power with their available dollars. Anyone who wants more income.</p>
                 </div>
-                <div class="items items-1 section-1-image">
-                    <img class="images" src="./assets/images/TZT Image 1.jpg" width="550px" alt="TZT Card" />
+                <div class="heroimg">
+                    <image src="img/hero.png" alt="TranzactCard App">
                 </div>
             </section>
-
             <!-- CALL TO ACTION BUTTON -->
-            <div class="cta-section">
-                <a href="#" class="cta-btn">Join Now!</a>
-            </div>
+            <!-- <div class="cta">
+            	<a href="#" class="cta-button">Join Now!</a>
+        	</div> -->
+
 
             <!-- SECTION 2 - DOUBLE YOUR BUYING POWER -->
-            <section class="section section-2">
-                <div class="items">
-                    <img class="images" src="./assets/images/ZbucksEarn-01.jpg" width="550px" alt="TZT Z-Club" /></div>
-                <div class="items items-2">
-                    <h3 class="heading-3">Double your buying power!</h3>
+            <section class="home-zbucks">
+                <div class="zbucksplatimg">
+                    <image src="img/ZbucksEarn.png" alt="Zbucks Example">
+                </div>
+                <div class="home-zbucks-textbox">
+                    <h2>Double your buying power!</h2>
                     <p>For each dollar you spend with the TranzactCard you are awarded one Z-Buck. Z-Bucks can be used in our members-only marketplace, the Z-Club, to buy down products to heavily discounted prices. </p>
                     <p>And it gets even better! TranzactCard offers Flash Sales, where specific products will be available to purchase with Z-Bucks only. Imagine being able to have a brand new iPhone using only your Z-Bucks?!
                     </p>
                     <p>Obtain true dollar-for-dollar value and double your buying power just for using your TranzactCard!</p>
+                    <br>
+                    <a href="zbucks" class="button">Learn More</a>
                 </div>
             </section>
 
-            <!-- DIVIDER -->
-            <div>
-                <hr class="rounded">
-            </div>
 
             <!-- SECTION 3 - TZT ACCOUNT -->
-            <section class="section section-3">
-                <div class="items items-3">
-                    <h3 class="heading-3">Pay yourself first. <br>Then put your money to work.</h3>
-                    <p>The TZT Account is a simple, yet effective way for members to engage in bank ownership, and bank ownership means the ability to earn dividends. On top of dividends, the TZT Account offers one of the highest interest rates available,
-                        allowing you an easy manner in which you can put your money to work.</p>
-                    <p>As your TZT Account balance increases so does your ability to continue on the path to new prosperity.</p>
-                </div>
-                <div class="items items-3b">
-                    <img class="images" src="./assets/images/TZT Account Circle.png" width="425px" alt="TZT Account" />
-                    <h4 class="tzt-img-title">TZT Account</h4>
-                </div>
-            </section>
-
-            <!-- CALL TO ACTION BUTTON -->
-            <div class="cta-section">
-                <a href="#" class="cta-btn">Learn More</a>
+            <div class="knowledge-container">
+                <section class="home-grey">
+                    <div class="home-account-textbox">
+                        <h2>Pay yourself first. <br>Then put your money to work.</h2>
+                        <p>The TZT Account is a simple, yet effective way for members to engage in bank ownership, and bank ownership means the ability to earn dividends. On top of dividends, the TZT Account offers one of the highest interest rates available,
+                            allowing you an easy manner in which you can put your money to work.</p>
+                        <a href="tztaccount.html" class="button">Learn More</a>
+                    </div>
+                    <div class="accountimg">
+                        <image src="img/tztaccountlogo.svg" alt="TZT Account">
+                            <h2><span><center>TZT Account</center></span></h2>
+                    </div>
+                </section>
             </div>
+
 
             <!-- SECTION 4 - RE-ENGINEERED FINANCIAL SYSTEM -->
-            <section class="section section-4a">
-                <div class="items">
-                    <img class="images" src="./assets/images/Cards Triangle.png" width="475px" alt="TZT Cards" />
+            <section class="home-aboutcard">
+                <div class="aboutcardimg">
+                    <image src="img/cards.svg" alt="Cards">
+                        <h3><span><center>Changing the way our members interact with their money.</center></span></h3>
                 </div>
-                <div class="items">
-                    <h3 class="heading-3">We've re-engineered the financial system so the money flows to you.</h3>
+                <div class="home-cards-textbox">
+                    <h2>We've re-engineered the financial system so the money flows to you.</h2>
                     <p>As a TranzactCard member you are instantly connected to the TranzactCard ecosystem so that you take advantage of every benefit, from the very first transaction. We have created automated services that strengthen your financial foundation
-                        and move you closer to your financial goals. You don’t need to do anything special on your end to take advantage of these benefits - simply use your TranzactCard.</p>
+                        and move you closer to your financial goals. You don’t need to do anything special on your end to take advantage of these benefits - simply use your TranzactCard.
+                    </p>
                 </div>
+
             </section>
 
-            <section class="section-4b">
-                <div class="items">
-                    <p class="heading-4">Changing the way our members interact with their money.</p>
-                </div>
-                <div class="items items-4b">
-                    <div class="icon-text">
-                        <img src="./assets/images/tup.png" width="150px" alt="Tranzact-Up" />
-                        <h4>Tranzact-Up</h4>
+            <!-- SECTION 5 - Tranzact -->
+            <section class="home-tranzact">
+
+                <!-- Tranzact Up -->
+
+                <div class="home-transactup" id="rcorners">
+                    <div class="tupimg">
+                        <image src="img/tup.svg" alt="Tranzact Up">
                     </div>
-                    <p class="text-justify">Each time you make a purchase with the TranzactCard, the transaction amount is rounded up to the nearest dollar, and the difference is automatically deposited into your TZT Account.</p>
+                    <div class="home-tup-textbox">
+                        <h3><strong>Tranzact-Up</strong></h3>
+                        <p>Each time you make a purchase with the TranzactCard, the transaction amount is rounded up to the nearest dollar, and the difference is automatically deposited into your TZT Account.</p>
+                    </div>
+                </div>
+                <br>
+                <!-- Tranzact Back -->
+
+                <div class="home-transactback" id="rcorners">
+                    <div class="tupimg">
+                        <image src="img/tback.svg" alt="Tranzact Back">
+                    </div>
+                    <div class="home-tback-textbox">
+                        <h3><strong>Tranzact-Back</strong></h3>
+                        <p>Better than cashback! The TranzactCard is automatically linked to a cashback system that includes nearly half a million merchants nationwide. Each time you use your TranzactCard at one of these merchants the cashback percentage
+                            is automatically deposited into your TZT Account.</p>
+                    </div>
                 </div>
 
-                <div class="items items-4b">
-                    <div class="icon-text">
-                        <img src="./assets/images/tback.png" width="150px" alt="Tranzact-Back" />
-                        <h4>Tranzact-Back</h4>
-                    </div>
-                    <p class="text-justify">Better than cashback! The TranzactCard is automatically linked to a cashback system that includes nearly half a million merchants nationwide. Each time you use your TranzactCard at one of these merchants the cashback percentage is
-                        automatically deposited into your TZT Account.</p>
-                </div>
             </section>
 
-            <!-- DIVIDER -->
-            <div>
-                <hr class="rounded">
+            <!-- SECTION 6 - Get more of your life -->
+            <div class="knowledge-container">
+                <section class="home-grey">
+                    <div class="home-knowledge-textbox">
+                        <h2>Get more of your life back!</h2>
+                        <p>TranzactCard delivers the foundation of financial knowledge through it’s financial education platform. Valuable, real-life information is learned as you progress through our modules. But we don’t stop there. We also provide the
+                            necessary tools to put everything you learn into practice with our robust, personal finance management system. As your financial knowledge increases and your money starts working for you, the path to new prosperity becomes
+                            clear as you begin to take back your life and focus on what’s important to you.</p>
+                        <a href="knowledge.html" class="button">Learn More</a>
+                    </div>
+                    <div class="knowledgeimg">
+                        <image src="img/knowledge.svg" alt="Knowledge">
+                            <h3><span><center>Financial knowledge and tools that transforms our members lives.</center></span></h3>
+                    </div>
+                </section>
+
+
+                <section class="knowledge-sub">
+
+                    <!-- Education -->
+
+                    <div class="home-education" id="boxes">
+                        <div class="educationimg">
+                            <image src="img/financial education.svg" alt="Financial Education">
+                        </div>
+                        <div class="education-textbox">
+                            <h3><strong>Financial Education</strong></h3>
+                            <p>Working hand in hand, TranzactCard assists you in evaluating your current financial situation, and helps you create solutions for your short-term and long-term financial goals. The TranzactCard platform provides education specific
+                                to your needs, with topics ranging from debt management to creating additional income streams.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Tools -->
+
+                    <div class="home-tools" id="boxes">
+                        <div class="toolsimg">
+                            <image src="img/financial tools.svg" alt="Financial Tools">
+                        </div>
+                        <div class="tools-textbox">
+                            <h3><strong>Financial Tools</strong></h3>
+                            <p>TranzactCard provides powerful tools that give you the means to take control of your financial well-being. You can view all of your financial accounts in one place, with analytics that show exactly where your money is going.
+                                You can then use the tools at your disposal to create budgets, manage debt, and put your money to work for you. TranzactCard takes personal finance management to another level with cutting-edge solutions that give you the
+                                ability to save, manage, and make money.</p>
+                        </div>
+                    </div>
+
+                </section>
             </div>
 
-            <!-- SECTION 5 - FINANCIAL KNOWLEDGE AND TOOLS -->
-            <section class="section section-5a">
-                <div class="items">
-                    <h3 class="heading-3">Get more of your life back!</h3>
-                    <p>TranzactCard delivers the foundation of financial knowledge through it’s financial education platform. Valuable, real-life information is learned as you progress through our modules. But we don’t stop there. We also provide the necessary
-                        tools to put everything you learn into practice with our robust, personal finance management system. As your financial knowledge increases and your money starts working for you, the path to new prosperity becomes clear as you begin
-                        to take back your life and focus on what’s important to you.</p>
-                </div>
-                <div class="items">
-                    <img class="images" src="./assets/images/Knowledge.png" width="475px" alt="Financial Knowledge" />
-                </div>
-            </section>
-            <section class="section-5b">
-                <div class="items">
-                    <p class="heading-4">Financial knowledge and tools that transform our members lives.</p>
-                </div>
-                <div class="items items-5b">
-                    <div class="icon-text">
-                        <img src="./assets/images/Financial Education.png" width="125px" alt="Financial Education" />
-                        <h4>Financial Education</h4>
-                        <p class="text-justify">Working hand in hand, TranzactCard assists you in evaluating your current financial situation, and helps you create solutions for your short-term and long-term financial goals. The TranzactCard platform provides education specific
-                            to your needs, with topics ranging from debt management to creating additional income streams.</p>
-                    </div>
-
-                </div>
-                <div class="items items-5b">
-                    <div class="icon-text">
-                        <img src="./assets/images/Financial Tools.png" width="125px" alt="Financial Tools" />
-                        <h4>Financial Tools</h4>
-                        <p class="text-justify">TranzactCard provides powerful tools that give you the means to take control of your financial well-being. You can view all of your financial accounts in one place and see exactly where your money is going. You can then use the
-                            tools at your disposal to create budgets, manage debt, and put your money to work for you. TranzactCard takes personal finance management to another level with cutting-edge solutions that give you the ability to save, manage,
-                            and make money.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CALL TO ACTION BUTTON -->
-            <div class="cta-section">
-                <a href="#" class="cta-btn">Join Now!</a>
-            </div>
+            <!-- <p class="heading-4">Financial knowledge and tools that transform our members lives.</p> -->
+            <!-- SECTION 6 -  Z-CLUB -->
 
         </main>
+
         <footer>
-            <div>
-                <img class="images footer-img" src="./assets/images/TranzactCard Logo 2.png" width="400px" alt="Financial Tools" />
+
+            <div class="logoimg">
+                <image src="img/logo.svg" alt="TranzactCard Logo">
             </div>
+
             <div>
-                <p>© 2021 TZT LLC</p>
+                <h5>
+                    <center>© 2021 TZT LLC</center>
+                </h5>
             </div>
         </footer>
+
     </article>
-
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
 
 </body>
 
