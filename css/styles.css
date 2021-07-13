@@ -1158,7 +1158,7 @@ Navb a {
 
 
 
-.Knowledgeimg {
+.Platformimg {
 	Max-width: 300px;
 	Height: auto;
 	margin-top: 0px;
@@ -1168,7 +1168,7 @@ Navb a {
 
 	/* 768 */
 	@media (min-width: 768px) {
-	  .Knowledgeimg {
+	  .Platformimg {
 		  Max-width: 600px;
 		  margin: auto;
 		  margin-top: 30px;
@@ -1177,7 +1177,7 @@ Navb a {
 
 	/* 1025 */
 	@media (min-width: 1025px) {
-	  .Knowledgeimg {
+	  .Platformimg {
 		Max-width: 700px;
 		margin-top: 0px;
 		margin-bottom: 0px;
