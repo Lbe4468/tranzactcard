@@ -72,8 +72,16 @@ nav ul li.btn {
     display: none;
 }
 
+#navbar {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+}
+
 article {
-    /* min-height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,18 +109,6 @@ p {
     width: auto;
 }
 
-:-webkit-any(article,
-aside,
-nav,
-section) :-webkit-any(article,
-aside,
-nav,
-section) h1 {
-    /* font-size: 1.17em; */
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
 h1 {
     margin: 0;
     padding: 0;
@@ -121,6 +117,17 @@ h1 {
 h4 {
     color: #494949;
     font-size: 24px;
+}
+
+:-webkit-any(article,
+aside,
+nav,
+section) :-webkit-any(article,
+aside,
+nav,
+section) h1 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .nav-bar {
@@ -217,13 +224,10 @@ h4 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    width: 40%;
-    max-width: 1440px;
+    width: 100vw;
     padding: 4rem 2rem;
     margin: 7.5rem 0rem;
     background: #efefef;
-    box-shadow: #429337 0px 48px 100px 0px;
-    border-radius: 10px;
 }
 
 .coming-soon p {
@@ -253,5 +257,134 @@ h4 {
 PUBLICATIONS HTML
 */
 
+.pubs-header-section {
+    width: 100vw;
+    margin-top: 83px;
+    padding: 10rem 0rem;
+    text-align: center;
+    background: #efefef;
+    margin-bottom: 5rem;
+}
+
+.pubs-hero-header h1 {
+    font-size: 72px;
+    color: #4bb941;
+}
+
+.pubs-hero-header h4 {
+    font-size: 40px;
+    color: #494949;
+}
+
+.article-heading {
+    background: #429337;
+    text-align: center;
+    max-width: 1200px;
+    border-radius: 4px;
+}
+
+.article-heading h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.article-heading h1 cite a {
+    font-style: normal;
+}
+
+.article-heading h1 cite a:link {
+    color: #ffffff;
+}
+
+.article-heading h1 cite a:visited {
+    color: #ffffff;
+}
+
+.prosperity-subheading {
+    font-size: 24px;
+    color: #efefef;
+    font-style: italic;
+    padding: 0.5rem 0rem;
+}
+
+.prosperity-details {
+    font-size: 16px;
+    color: #efefef;
+    padding-top: 1.5rem;
+    line-height: 1.25rem;
+}
+
+.article-content {
+    margin-top: -2.5rem;
+}
+
+.interview-content {
+    max-width: 900px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.interview-content p {
+    padding: 0.5rem 0rem;
+}
+
+.interview-content a:link {
+    color: #4bb941;
+}
+
+.interview-content a:visited {
+    color: #429337;
+}
+
+.bold-letters {
+    font-weight: 700;
+    padding: 0.5rem 0rem;
+}
+
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width:407px) {
+    #navbar {
+        padding: 0.75rem 1rem;
+    }
+    nav ul li {
+        padding: 0.5rem 0;
+    }
+    nav ul li.nav-items {
+        width: 100%;
+        display: none;
+        margin: 0;
+    }
+    nav ul li.nav-items.show {
+        display: block;
+    }
+    nav ul li.btn {
+        display: block;
+    }
+    nav ul li.nav-items:hover:after {
+        opacity: 0;
+    }
+    header {
+        margin: 0 0 .5rem 0;
+    }
+    main p {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 21px;
+    }
+    footer {
+        margin-top: 5rem;
+        min-height: 12rem;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    .logo-img {
+        height: 18px;
+    }
+}

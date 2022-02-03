@@ -14,8 +14,8 @@
 
 <body>
 
+    <!-- MOBILE RESPONSIVE NAVBAR -->
     <header>
-        <!-- MOBILE RESPONSIVE NAVBAR -->
         <nav id="navbar" class="nav-bar">
             <ul>
                 <li class="logo">
@@ -25,7 +25,7 @@
                 </li>
                 <li class="nav-items"><a href="./publications.html">Publications</a></li>
                 <li class="nav-items"><a href="./contact-us.html">Contact Us</a></li>
-                <li id="burger-menu" class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li id="burger-menu" class="btn"><i class="fas fa-bars"></i></li>
             </ul>
         </nav>
 
@@ -40,7 +40,6 @@
     </header>
 
     <article>
-
         <main class="main">
             <!-- SECTION - HEADER -->
             <section class="header-section">
@@ -92,17 +91,17 @@
                 </div>
                 <img class="images" src="./assets/images/TZTImg04.png" width="550px" alt="TZT Card" />
             </section>
-
-            <!-- COMING SOON -->
-            <section class="section section-4">
-                <div class="coming-soon">
-                    <p>
-                        Arriving in 2022
-                    </p>
-                </div>
-                <div><img class="images" src="./assets/images/TZTImg05.png" width="550px" alt="TZT Card"></div>
-            </section>
         </main>
+
+        <!-- COMING SOON -->
+        <section class="section-4">
+            <div class="coming-soon">
+                <p>
+                    Arriving in 2022
+                </p>
+            </div>
+            <div><img class="images" src="./assets/images/TZTImg05.png" width="550px" alt="TZT Card"></div>
+        </section>
 
         <footer>
             <div>
@@ -112,7 +111,6 @@
                 <p>© 2021 TZT LLC</p>
             </div>
         </footer>
-
     </article>
 
     <script>
@@ -120,15 +118,16 @@
             myFunction()
         };
 
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
+        var prevScrollPos = window.pageYOffset;
 
         function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
             } else {
-                navbar.classList.remove("sticky");
+                document.getElementById("navbar").style.top = "-83px";
             }
+            prevScrollPos = currentScrollPos;
         }
     </script>
 
