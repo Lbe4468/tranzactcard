@@ -52,7 +52,7 @@ nav ul li.logo {
 }
 
 nav ul li a {
-    color: #494949;
+    color: #000000;
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
@@ -93,7 +93,7 @@ footer {
     width: 100vw;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 7.5rem;
     min-height: 20rem;
     border-top: 1px solid rgb(236, 239, 241);
 }
@@ -197,7 +197,7 @@ section) h1 {
 }
 
 .images {
-    padding: 1rem;
+    padding: 0rem 2rem;
 }
 
 .section-1 {
@@ -273,19 +273,21 @@ PUBLICATIONS HTML
 
 .pubs-hero-header h4 {
     font-size: 40px;
-    color: #494949;
+    color: #000000;
 }
 
 .article-heading {
-    background: #429337;
+    background: #494949;
     text-align: center;
     max-width: 1200px;
     border-radius: 4px;
+    padding: 5rem 7.5rem;
 }
 
 .article-heading h1 {
     font-size: 36px;
     color: #ffffff;
+    font-weight: 500;
 }
 
 .article-heading h1 cite a {
@@ -301,7 +303,7 @@ PUBLICATIONS HTML
 }
 
 .prosperity-subheading {
-    font-size: 24px;
+    font-size: 22px;
     color: #efefef;
     font-style: italic;
     padding: 0.5rem 0rem;
@@ -316,6 +318,7 @@ PUBLICATIONS HTML
 
 .article-content {
     margin-top: -2.5rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .interview-content {
@@ -339,6 +342,24 @@ PUBLICATIONS HTML
 .bold-letters {
     font-weight: 700;
     padding: 0.5rem 0rem;
+}
+
+
+/* CONTACT US */
+
+.contact-heading {
+    background-color: #494949;
+    text-align: center;
+    border-radius: 4px;
+    margin: 7.5rem 0rem;
+    padding: 5rem 7.5rem;
+}
+
+.contact-heading h1,
+.contact-heading p {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 500;
 }
 
 
@@ -383,8 +404,5 @@ PUBLICATIONS HTML
     }
     footer p {
         font-size: 14px;
-    }
-    .logo-img {
-        height: 18px;
     }
 }
