@@ -25,7 +25,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 1.75rem 0;
+    padding: 1.75rem 0rem;
     cursor: pointer;
 }
 
@@ -45,10 +45,6 @@ nav ul li.nav-items:after {
     background: #4bb941;
     opacity: 0;
     transition: all 0.2s linear;
-}
-
-nav ul li.logo {
-    flex: 1;
 }
 
 nav ul li a {
@@ -154,11 +150,11 @@ section) h1 {
 }
 
 .header-section {
-    width: 100%;
+    min-width: 1920px;
     height: 90vh;
     display: flex;
     flex-direction: column;
-    background-image: url('../assets/images/Womanwithphone2.jpg');
+    background-image: url('../assets/images/woman-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 45%;
@@ -185,7 +181,8 @@ section) h1 {
 }
 
 .section {
-    padding: 5rem 10rem;
+    max-width: 1400px;
+    padding: 5rem 3rem;
 }
 
 .section a:link {
@@ -212,6 +209,7 @@ section) h1 {
     flex-direction: row-reverse;
     align-items: center;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 4px;
 }
 
 .section-3 {
@@ -225,7 +223,7 @@ section) h1 {
     flex-direction: column-reverse;
     align-items: center;
     width: 100vw;
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
     margin: 7.5rem 0rem;
     background: #efefef;
 }
@@ -366,12 +364,6 @@ PUBLICATIONS HTML
 /* MEDIA QUERIES */
 
 @media screen and (max-width:407px) {
-    #navbar {
-        padding: 0.75rem 1rem;
-    }
-    nav ul li {
-        padding: 0.5rem 0;
-    }
     nav ul li.nav-items {
         width: 100%;
         display: none;
@@ -386,6 +378,12 @@ PUBLICATIONS HTML
     nav ul li.nav-items:hover:after {
         opacity: 0;
     }
+    nav ul li.logo {
+        flex: 1;
+    }
+    .nav-bar {
+        padding: 0rem 1rem;
+    }
     header {
         margin: 0 0 .5rem 0;
     }
@@ -395,14 +393,14 @@ PUBLICATIONS HTML
     p {
         font-size: 16px;
     }
-    h4 {
-        font-size: 21px;
-    }
     footer {
         margin-top: 5rem;
         min-height: 12rem;
     }
     footer p {
         font-size: 14px;
+    }
+    .pubs-header-section {
+        margin-top: -1px;
     }
 }
