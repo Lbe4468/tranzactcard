@@ -13,7 +13,8 @@ body {
 }
 
 nav {
-    border-bottom: 1px solid rgb(236, 239, 241);
+    /* border-bottom: 1px solid rgb(236, 239, 241); */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 24px 50px 0px;
 }
 
 nav ul {
@@ -25,7 +26,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 1.75rem 0rem;
+    padding: 1.75rem 0.5rem;
     cursor: pointer;
 }
 
@@ -49,7 +50,7 @@ nav ul li.nav-items:after {
 
 nav ul li a {
     color: #000000;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
@@ -255,21 +256,21 @@ section) h1 {
 PUBLICATIONS HTML
 */
 
-.pubs-header-section {
+.main-header-section {
     width: 100vw;
     margin-top: 83px;
-    padding: 10rem 0rem;
+    padding: 15.2rem 0rem 10rem 0rem;
     text-align: center;
     background: #efefef;
     margin-bottom: 5rem;
 }
 
-.pubs-hero-header h1 {
+.main-hero-header h1 {
     font-size: 72px;
     color: #4bb941;
 }
 
-.pubs-hero-header h4 {
+.main-hero-header h4 {
     font-size: 40px;
     color: #000000;
 }
@@ -360,6 +361,14 @@ PUBLICATIONS HTML
     font-weight: 500;
 }
 
+.article-main {
+    margin-top: -83px;
+}
+
+.contact-section {
+    margin: 5% 0rem;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -400,7 +409,7 @@ PUBLICATIONS HTML
     footer p {
         font-size: 14px;
     }
-    .pubs-header-section {
+    .main-header-section {
         margin-top: -1px;
     }
 }
