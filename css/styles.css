@@ -321,7 +321,8 @@ PUBLICATIONS HTML
 }
 
 .interview-content {
-    max-width: 900px;
+    max-width: 1200px;
+    padding: 0rem 2.5rem;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -372,7 +373,7 @@ PUBLICATIONS HTML
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:407px) {
+@media screen and (max-width: 375px) and (min-width: 250px) {
     nav ul li.nav-items {
         width: 100%;
         display: none;
@@ -409,7 +410,214 @@ PUBLICATIONS HTML
     footer p {
         font-size: 14px;
     }
-    .main-header-section {
+    .header-section {
+        height: 99vh;
+    }
+    .hero-header {
+        max-width: 375px;
+        padding: 2rem;
+        text-align: center;
+        background-size: contain;
+        align-items: flex-end;
+    }
+    .hero-header h1 {
+        color: #ffffff;
+        font-size: 36px;
+        padding: 0rem;
+    }
+    .hero-header h4 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 1rem 0rem;
+    }
+    .section {
+        max-width: 350px;
+        padding: 1rem;
+    }
+    .images {
+        padding: 1rem 2.5rem;
+    }
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    /* .main-header-section {
         margin-top: -1px;
+    } */
+    .heading {
+        font-size: 32px;
+        color: #4bb941;
+        padding-bottom: 0.5rem;
+    }
+    .heading-content {
+        font-weight: 100;
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
     }
 }
+
+@media screen and (max-width: 575.98px) and (min-width: 376px) {
+    nav ul li.nav-items {
+        width: 100%;
+        display: none;
+        margin: 0;
+    }
+    nav ul li.nav-items.show {
+        display: block;
+    }
+    nav ul li.btn {
+        display: block;
+    }
+    nav ul li.nav-items:hover:after {
+        opacity: 0;
+    }
+    nav ul li.logo {
+        flex: 1;
+    }
+    .nav-bar {
+        padding: 0rem 1rem;
+    }
+    header {
+        margin: 0 0 .5rem 0;
+    }
+    main p {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    footer {
+        margin-top: 5rem;
+        min-height: 12rem;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    .header-section {
+        height: 99vh;
+    }
+    .hero-header {
+        max-width: 375px;
+        padding: 1.75rem;
+        text-align: center;
+        background-size: contain;
+        align-items: flex-end;
+    }
+    .hero-header h1 {
+        color: #ffffff;
+        font-size: 40px;
+        padding: 0rem;
+    }
+    .hero-header h4 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 1rem 0rem;
+    }
+    .section {
+        max-width: 350px;
+        padding: 0.25rem;
+    }
+    .images {
+        padding: 1rem 2.5rem;
+    }
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    /* .main-header-section {
+        margin-top: -1px;
+    } */
+    .heading {
+        font-size: 36px;
+        color: #4bb941;
+        padding-bottom: 0.5rem;
+    }
+    .heading-content {
+        font-weight: 100;
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .section-2 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-3 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-4 {
+        width: 75%;
+        box-shadow: none;
+        margin-top: 2.5rem;
+        background-color: #ffffff;
+        margin: 2rem;
+    }
+    .section-4 img {
+        width: 400px;
+    }
+    .coming-soon p {
+        font-size: 36px;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    nav ul li.nav-items {
+        width: 100%;
+        display: none;
+        margin: 0;
+    }
+    nav ul li.nav-items.show {
+        display: block;
+    }
+    nav ul li.btn {
+        display: block;
+    }
+    nav ul li.nav-items:hover:after {
+        opacity: 0;
+    }
+    nav ul li.logo {
+        flex: 1;
+    }
+    .nav-bar {
+        padding: 0rem 1rem;
+    }
+    header {
+        margin: 0 0 .5rem 0;
+    }
+    main p {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    footer {
+        margin-top: 5rem;
+        min-height: 12rem;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
