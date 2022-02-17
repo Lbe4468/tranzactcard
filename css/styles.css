@@ -101,6 +101,10 @@ footer p {
     font-size: 16px;
 }
 
+footer div {
+    padding: 0.25rem 0rem;
+}
+
 p {
     color: #494949;
     width: auto;
@@ -276,7 +280,7 @@ PUBLICATIONS HTML
 }
 
 .article-heading {
-    background: #494949;
+    background: #429337;
     text-align: center;
     max-width: 1200px;
     border-radius: 4px;
@@ -316,7 +320,7 @@ PUBLICATIONS HTML
 }
 
 .article-content {
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
@@ -374,6 +378,10 @@ PUBLICATIONS HTML
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 375px) and (min-width: 250px) {
+    nav ul li a {
+        font-size: 1rem;
+        width: 100%;
+    }
     nav ul li.nav-items {
         width: 100%;
         display: none;
@@ -394,6 +402,9 @@ PUBLICATIONS HTML
     .nav-bar {
         padding: 0rem 1rem;
     }
+    .nav-items {
+        padding: 0.5rem;
+    }
     header {
         margin: 0 0 .5rem 0;
     }
@@ -410,19 +421,22 @@ PUBLICATIONS HTML
     footer p {
         font-size: 14px;
     }
+    .logo-img {
+        height: 18px;
+    }
     .header-section {
         height: 99vh;
     }
     .hero-header {
         max-width: 375px;
-        padding: 2rem;
+        padding: 1.75rem;
         text-align: center;
         background-size: contain;
         align-items: flex-end;
     }
     .hero-header h1 {
         color: #ffffff;
-        font-size: 36px;
+        font-size: 40px;
         padding: 0rem;
     }
     .hero-header h4 {
@@ -433,7 +447,7 @@ PUBLICATIONS HTML
     }
     .section {
         max-width: 350px;
-        padding: 1rem;
+        padding: 0.25rem 1rem;
     }
     .images {
         padding: 1rem 2.5rem;
@@ -444,11 +458,8 @@ PUBLICATIONS HTML
         align-items: center;
         margin-top: 5rem;
     }
-    /* .main-header-section {
-        margin-top: -1px;
-    } */
     .heading {
-        font-size: 32px;
+        font-size: 36px;
         color: #4bb941;
         padding-bottom: 0.5rem;
     }
@@ -457,6 +468,85 @@ PUBLICATIONS HTML
         font-size: 16px;
         text-align: justify;
         text-justify: inter-word;
+    }
+    .section-2 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-3 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-4 {
+        width: 75%;
+        box-shadow: none;
+        margin-top: 2.5rem;
+        background-color: #ffffff;
+        margin: 2rem;
+    }
+    .section-4 img {
+        width: 400px;
+    }
+    .coming-soon p {
+        font-size: 36px;
+    }
+    /* PUBLICATIONS QUERY */
+    .main-header-section {
+        width: 100vw;
+        margin-top: 83px;
+        padding: 10rem 0rem 5rem 0rem;
+        text-align: center;
+        background: #efefef;
+        margin-bottom: 5rem;
+    }
+    .main-hero-header h1 {
+        font-size: 40px;
+        color: #4bb941;
+    }
+    .main-hero-header h4 {
+        font-size: 22px;
+        color: #000000;
+    }
+    .prosperity-subheading {
+        max-width: 250px;
+        font-size: 15px
+    }
+    .prosperity-details {
+        font-size: 12px;
+    }
+    .article-heading {
+        text-align: center;
+        max-width: 1200px;
+        border-radius: 0;
+        padding: 2rem;
+    }
+    .article-heading h1 {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .article-content {
+        margin-top: 0;
+        box-shadow: none;
+    }
+    .interview-content {
+        padding: 1rem 0rem;
+    }
+    .interview-content p {
+        padding: 0.5rem 0rem;
+    }
+    /* CONTACT US */
+    .contact-heading {
+        margin: 5rem 0rem;
+        padding: 2.55rem 5rem;
+    }
+    .contact-heading h1,
+    .contact-heading p {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 500;
     }
 }
 
@@ -501,7 +591,7 @@ PUBLICATIONS HTML
         height: 99vh;
     }
     .hero-header {
-        max-width: 375px;
+        max-width: 376px;
         padding: 1.75rem;
         text-align: center;
         background-size: contain;
@@ -519,8 +609,8 @@ PUBLICATIONS HTML
         padding: 1rem 0rem;
     }
     .section {
-        max-width: 350px;
-        padding: 0.25rem;
+        max-width: 376px;
+        padding: 1rem;
     }
     .images {
         padding: 1rem 2.5rem;
@@ -531,9 +621,6 @@ PUBLICATIONS HTML
         align-items: center;
         margin-top: 5rem;
     }
-    /* .main-header-section {
-        margin-top: -1px;
-    } */
     .heading {
         font-size: 36px;
         color: #4bb941;
@@ -568,12 +655,68 @@ PUBLICATIONS HTML
     .coming-soon p {
         font-size: 36px;
     }
+    /* PUBLICATIONS QUERY */
+    .main-header-section {
+        width: 100vw;
+        margin-top: 83px;
+        padding: 10rem 0rem 5rem 0rem;
+        text-align: center;
+        background: #efefef;
+        margin-bottom: 5rem;
+    }
+    .main-hero-header h1 {
+        font-size: 40px;
+        color: #4bb941;
+    }
+    .main-hero-header h4 {
+        font-size: 22px;
+        color: #000000;
+    }
+    .prosperity-subheading {
+        max-width: 250px;
+        font-size: 15px
+    }
+    .prosperity-details {
+        font-size: 12px;
+    }
+    .article-heading {
+        text-align: center;
+        max-width: 1200px;
+        border-radius: 0;
+        padding: 2rem;
+    }
+    .article-heading h1 {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .article-content {
+        margin-top: 0;
+        box-shadow: none;
+    }
+    .interview-content {
+        padding: 1rem 0.25rem;
+    }
+    .interview-content p {
+        padding: 0.5rem 0rem;
+    }
+    /* CONTACT US */
+    .contact-heading {
+        margin: 5rem 0rem;
+        padding: 2.55rem 5rem;
+    }
+    .contact-heading h1,
+    .contact-heading p {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 500;
+    }
 }
 
 
 /* Small devices (landscape phones, less than 768px) */
 
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) and (min-width: 576px) {
     nav ul li.nav-items {
         width: 100%;
         display: none;
@@ -610,14 +753,408 @@ PUBLICATIONS HTML
     footer p {
         font-size: 14px;
     }
+    .header-section {
+        height: 75vh;
+    }
+    .hero-header {
+        max-width: 700px;
+        padding: 1.75rem;
+        text-align: center;
+        background-size: contain;
+        align-items: flex-end;
+    }
+    .hero-header h1 {
+        color: #ffffff;
+        font-size: 40px;
+        padding: 0rem;
+    }
+    .hero-header h4 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 1rem 0rem;
+    }
+    .section {
+        max-width: 700px;
+        padding: 2rem 1rem;
+    }
+    .images {
+        padding: 1rem 2.5rem;
+    }
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .heading {
+        font-size: 36px;
+        color: #4bb941;
+        padding-bottom: 0.5rem;
+    }
+    .heading-content {
+        font-weight: 100;
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .section-2 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-3 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-4 {
+        width: 75%;
+        box-shadow: none;
+        margin-top: 2.5rem;
+        background-color: #ffffff;
+        margin: 2rem;
+    }
+    .section-4 img {
+        width: 400px;
+    }
+    .coming-soon p {
+        font-size: 36px;
+    }
+    /* PUBLICATIONS QUERY */
+    .main-header-section {
+        width: 100vw;
+        margin-top: 83px;
+        padding: 10rem 0rem 5rem 0rem;
+        text-align: center;
+        background: #efefef;
+        margin-bottom: 5rem;
+    }
+    .main-hero-header h1 {
+        font-size: 40px;
+        color: #4bb941;
+    }
+    .main-hero-header h4 {
+        font-size: 22px;
+        color: #000000;
+    }
+    .prosperity-subheading {
+        max-width: 250px;
+        font-size: 15px
+    }
+    .prosperity-details {
+        font-size: 12px;
+    }
+    .article-heading {
+        text-align: center;
+        max-width: 1200px;
+        border-radius: 0;
+        padding: 2rem;
+    }
+    .article-heading h1 {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .article-content {
+        margin-top: 0;
+        box-shadow: none;
+    }
+    .interview-content {
+        padding: 1rem 0.25rem;
+    }
+    .interview-content p {
+        padding: 0.5rem 0rem;
+    }
+    /* CONTACT US */
+    .contact-heading {
+        margin: 5rem 0rem;
+        padding: 2.55rem 5rem;
+    }
+    .contact-heading h1,
+    .contact-heading p {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 500;
+    }
 }
 
 
 /* Medium devices (tablets, less than 992px) */
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) and (min-width: 768px) {
+    nav ul li.nav-items {
+        width: 100%;
+        display: none;
+        margin: 0;
+    }
+    nav ul li.nav-items.show {
+        display: block;
+    }
+    nav ul li.btn {
+        display: block;
+    }
+    nav ul li.nav-items:hover:after {
+        opacity: 0;
+    }
+    nav ul li.logo {
+        flex: 1;
+    }
+    .nav-bar {
+        padding: 0rem 1rem;
+    }
+    header {
+        margin: 0 0 .5rem 0;
+    }
+    main p {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    footer {
+        margin-top: 5rem;
+        min-height: 12rem;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    .header-section {
+        height: 75vh;
+    }
+    .hero-header {
+        max-width: 768px;
+        padding: 1.75rem;
+        text-align: center;
+        background-size: contain;
+        align-items: flex-end;
+    }
+    .hero-header h1 {
+        color: #ffffff;
+        font-size: 40px;
+        padding: 0rem;
+    }
+    .hero-header h4 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 1rem 0rem;
+    }
+    .section {
+        max-width: 768px;
+        padding: 2rem;
+    }
+    .images {
+        padding: 1rem 2.5rem;
+    }
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .heading {
+        font-size: 36px;
+        color: #4bb941;
+        padding-bottom: 0.5rem;
+    }
+    .heading-content {
+        font-weight: 100;
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .section-2 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-3 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-4 {
+        width: 75%;
+        box-shadow: none;
+        margin-top: 2.5rem;
+        background-color: #ffffff;
+        margin: 2rem;
+    }
+    .section-4 img {
+        width: 400px;
+    }
+    .coming-soon p {
+        font-size: 36px;
+    }
+    /* PUBLICATIONS QUERY */
+    .main-header-section {
+        width: 100vw;
+        margin-top: 83px;
+        padding: 10rem 0rem 5rem 0rem;
+        text-align: center;
+        background: #efefef;
+        margin-bottom: 5rem;
+    }
+    .main-hero-header h1 {
+        font-size: 40px;
+        color: #4bb941;
+    }
+    .main-hero-header h4 {
+        font-size: 22px;
+        color: #000000;
+    }
+    .article-heading {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 1200px;
+        border-radius: 0;
+        padding: 2rem;
+    }
+    .article-heading h1 {
+        font-size: 36px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .prosperity-subheading {
+        align-self: center;
+        max-width: 350px;
+        font-size: 20px
+    }
+    .prosperity-details {
+        font-size: 16px;
+    }
+    .article-content {
+        margin-top: -1rem;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+    .interview-content {
+        padding: 1rem 0.25rem;
+    }
+    .interview-content p {
+        padding: 0.5rem 0rem;
+    }
+    /* CONTACT US */
+    .contact-heading {
+        margin: 5rem 0rem;
+        padding: 2.55rem 5rem;
+    }
+    .contact-heading h1,
+    .contact-heading p {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+}
 
 
 /* Large devices (desktops, less than 1200px) */
 
-@media (max-width: 1199.98px) {}
+
+/* @media (max-width: 1199.98px) {
+    nav ul li.nav-items {
+        width: 100%;
+        display: none;
+        margin: 0;
+    }
+    nav ul li.nav-items.show {
+        display: block;
+    }
+    nav ul li.btn {
+        display: block;
+    }
+    nav ul li.nav-items:hover:after {
+        opacity: 0;
+    }
+    nav ul li.logo {
+        flex: 1;
+    }
+    .nav-bar {
+        padding: 0rem 1rem;
+    }
+    header {
+        margin: 0 0 .5rem 0;
+    }
+    main p {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    footer {
+        margin-top: 5rem;
+        min-height: 12rem;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    .header-section {
+        height: 75vh;
+    }
+    .hero-header {
+        max-width: 900px;
+        padding: 1.75rem;
+        text-align: center;
+        background-size: contain;
+        align-items: flex-end;
+    }
+    .hero-header h1 {
+        color: #ffffff;
+        font-size: 40px;
+        padding: 0rem;
+    }
+    .hero-header h4 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 1rem 0rem;
+    }
+    .section {
+        max-width: 900px;
+        padding: 2rem;
+    }
+    .images {
+        padding: 1rem 2.5rem;
+    }
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .heading {
+        font-size: 36px;
+        color: #4bb941;
+        padding-bottom: 0.5rem;
+    }
+    .heading-content {
+        font-weight: 100;
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .section-2 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-3 {
+        flex-direction: column;
+        box-shadow: none;
+        margin-top: 2.5rem;
+    }
+    .section-4 {
+        width: 75%;
+        box-shadow: none;
+        margin-top: 2.5rem;
+        background-color: #ffffff;
+        margin: 2rem;
+    }
+    .section-4 img {
+        width: 400px;
+    }
+    .coming-soon p {
+        font-size: 36px;
+    }
+} */
