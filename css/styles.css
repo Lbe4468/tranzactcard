@@ -26,7 +26,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 1.75rem 0.5rem;
+    padding: 1.50rem 0.5rem;
     cursor: pointer;
 }
 
@@ -136,7 +136,7 @@ section) h1 {
 }
 
 .logo-img {
-    padding-top: 0.15rem;
+    /* padding-top: 0.35rem; */
 }
 
 .sticky {
@@ -156,13 +156,14 @@ section) h1 {
 
 .header-section {
     min-width: 1920px;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url('../assets/images/woman-banner.jpg');
+    background-image: url('../assets/images/pay-with-card.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 45%;
+    background-position-x: 50%;
+    /* background-position-y: 45%; */
     justify-content: flex-end;
     align-items: center;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -177,13 +178,14 @@ section) h1 {
 .hero-header h1 {
     color: #ffffff;
     font-size: 72px;
+    padding-bottom: 5rem;
 }
 
-.hero-header h4 {
+/* .hero-header h4 {
     color: #ffffff;
     font-weight: 500;
     padding: 1rem 0 7.5rem 0;
-}
+} */
 
 .section {
     max-width: 1400px;
@@ -197,11 +199,34 @@ section) h1 {
 .section a:visited {
     color: #429337;
 }
-
 .images {
-    padding: 0rem 2rem;
+    padding: 1rem 2.5rem;
 }
-
+.nav-join-now {
+    background-color: #4bb941;
+    border: none;
+    border-radius: 0.75rem;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+.join-now {
+    background-color: #4bb941;
+    border: none;
+    border-radius: 0.75rem;
+    color: white;
+    padding: 1.5rem 3.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2rem 0rem;
+    cursor: pointer;
+  }
 .section-1 {
     display: flex;
     flex-direction: row;
@@ -225,24 +250,36 @@ section) h1 {
 
 .section-4 {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     width: 100vw;
     padding: 4rem 0rem;
     margin: 7.5rem 0rem;
     background: #efefef;
-}
-
-.coming-soon p {
     text-align: center;
+}
+.section-4.images {
+    padding: 0rem;
+}
+.section-4 ul {
+    list-style: none;
+}
+.coming-soon {
     color: #4bb941;
     font-size: 60px;
     font-weight: 500;
 }
-
+.special-details {
+    font-size: 32px;
+    padding-bottom: 1rem;
+}
+.special-list {
+    padding: 0.30rem 0rem;
+    font-weight: bold;
+}
 .heading {
     font-size: 48px;
-    color: #4bb941;
+    color: #7dd830;
     padding-bottom: 0.5rem;
 }
 
@@ -254,128 +291,56 @@ section) h1 {
     font-weight: 200;
     font-size: 18px;
 }
-
-
-/*
-PUBLICATIONS HTML
-*/
-
-.main-header-section {
-    width: 100vw;
-    margin-top: 83px;
-    padding: 15.2rem 0rem 10rem 0rem;
-    text-align: center;
-    background: #efefef;
-    margin-bottom: 5rem;
-}
-
-.main-hero-header h1 {
-    font-size: 72px;
-    color: #4bb941;
-}
-
-.main-hero-header h4 {
-    font-size: 40px;
-    color: #000000;
-}
-
-.article-heading {
-    background: #429337;
-    text-align: center;
-    max-width: 1200px;
-    border-radius: 4px;
-    padding: 5rem 7.5rem;
-}
-
-.article-heading h1 {
-    font-size: 36px;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.article-heading h1 cite a {
-    font-style: normal;
-}
-
-.article-heading h1 cite a:link {
-    color: #ffffff;
-}
-
-.article-heading h1 cite a:visited {
-    color: #ffffff;
-}
-
-.prosperity-subheading {
-    font-size: 22px;
-    color: #efefef;
-    font-style: italic;
-    padding: 0.5rem 0rem;
-}
-
-.prosperity-details {
-    font-size: 16px;
-    color: #efefef;
-    padding-top: 1.5rem;
-    line-height: 1.25rem;
-}
-
-.article-content {
-    margin-top: -1.5rem;
+.section-5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 4px;
+}
+.section-5a {
+    padding: 2rem;
+}
+.section-5b {
+    padding: 2rem;
+}
+footer ul {
+    list-style: none;
 }
 
-.interview-content {
-    max-width: 1200px;
-    padding: 0rem 2.5rem;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.interview-content p {
-    padding: 0.5rem 0rem;
-}
-
-.interview-content a:link {
+footer ul a {
+    text-decoration: none;
     color: #4bb941;
 }
-
-.interview-content a:visited {
-    color: #429337;
+.privacy {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-top: 5rem;
 }
-
-.bold-letters {
-    font-weight: 700;
-    padding: 0.5rem 0rem;
+.privacy p {
+    padding: 0.25rem;
 }
-
-
-/* CONTACT US */
-
-.contact-heading {
-    background-color: #494949;
-    text-align: center;
-    border-radius: 4px;
-    margin: 7.5rem 0rem;
-    padding: 5rem 7.5rem;
+.privacy ul {
+    font-weight: 100;
+    margin-left: 3rem;
 }
-
-.contact-heading h1,
-.contact-heading p {
-    font-size: 36px;
-    color: #ffffff;
-    font-weight: 500;
+.privacy ul li {
+    color: #494949;
 }
-
-.article-main {
-    margin-top: -83px;
+.doc-bold {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0.75rem 0rem;
 }
-
-.contact-section {
-    margin: 5% 0rem;
+.doc-ital {
+    font-style: italic;
 }
 
 
 /* MEDIA QUERIES */
+
+
 
 @media screen and (max-width: 375px) and (min-width: 250px) {
     nav ul li a {
@@ -424,44 +389,58 @@ PUBLICATIONS HTML
     .logo-img {
         height: 18px;
     }
-    .header-section {
-        height: 99vh;
+    .responsive {
+        width: 100%;
+        height: auto;
     }
+    .images {
+        display: none;
+    }
+    .join-now {
+        background-color: #4bb941;
+        border: none;
+        border-radius: 0.75rem;
+        color: white;
+        padding: 1rem 3rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2rem 0rem;
+        cursor: pointer;
+      }
+    .header-section {
+        height: 100vh;
+        background-image: url('../assets/images/pay-with-card.jpg');
+        background-position-x: 5%;
+        justify-content: flex-end;
+    }    
     .hero-header {
-        max-width: 375px;
-        padding: 1.75rem;
+        max-width: 376px;
+        padding: 2.5rem;
         text-align: center;
         background-size: contain;
         align-items: flex-end;
     }
     .hero-header h1 {
         color: #ffffff;
-        font-size: 40px;
+        font-size: 38px;
         padding: 0rem;
     }
-    .hero-header h4 {
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 1rem 0rem;
+    h1.heading {
+        font-size: 32px;
+        color: #7dd830;
+        padding-bottom: 0.5rem;
     }
     .section {
         max-width: 350px;
         padding: 0.25rem 1rem;
-    }
-    .images {
-        padding: 1rem 2.5rem;
     }
     .section-1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 5rem;
-    }
-    .heading {
-        font-size: 36px;
-        color: #4bb941;
-        padding-bottom: 0.5rem;
     }
     .heading-content {
         font-weight: 100;
@@ -480,74 +459,41 @@ PUBLICATIONS HTML
         margin-top: 2.5rem;
     }
     .section-4 {
-        width: 75%;
         box-shadow: none;
         margin-top: 2.5rem;
         background-color: #ffffff;
-        margin: 2rem;
     }
     .section-4 img {
         width: 400px;
     }
-    .coming-soon p {
-        font-size: 36px;
-    }
-    /* PUBLICATIONS QUERY */
-    .main-header-section {
-        width: 100vw;
-        margin-top: 83px;
-        padding: 10rem 0rem 5rem 0rem;
-        text-align: center;
-        background: #efefef;
-        margin-bottom: 5rem;
-    }
-    .main-hero-header h1 {
-        font-size: 40px;
+    .coming-soon {
         color: #4bb941;
+        font-size: 48px;
+        font-weight: 500;
     }
-    .main-hero-header h4 {
-        font-size: 22px;
-        color: #000000;
+    .special-details {
+        font-size: 24px;
+        padding-bottom: 1rem;
+        margin: 0rem 2rem;
     }
-    .prosperity-subheading {
-        max-width: 250px;
-        font-size: 15px
+    .special-list {
+        margin: 0rem 2rem;
+        padding: 0.30rem 0rem;
+        font-weight: bold;
+        font-size: 15px; 
     }
-    .prosperity-details {
-        font-size: 12px;
+    .section-5 {
+        flex-direction: column;
+        padding: 2rem 0rem;
     }
-    .article-heading {
+    .section-5a {
         text-align: center;
-        max-width: 1200px;
-        border-radius: 0;
-        padding: 2rem;
+        padding: 1rem;
     }
-    .article-heading h1 {
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: 500;
+    .section-5b {
+        text-align: center;
     }
-    .article-content {
-        margin-top: 0;
-        box-shadow: none;
-    }
-    .interview-content {
-        padding: 1rem 0rem;
-    }
-    .interview-content p {
-        padding: 0.5rem 0rem;
-    }
-    /* CONTACT US */
-    .contact-heading {
-        margin: 5rem 0rem;
-        padding: 2.55rem 5rem;
-    }
-    .contact-heading h1,
-    .contact-heading p {
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: 500;
-    }
+    
 }
 
 @media screen and (max-width: 575.98px) and (min-width: 376px) {
@@ -587,12 +533,35 @@ PUBLICATIONS HTML
     footer p {
         font-size: 14px;
     }
-    .header-section {
-        height: 99vh;
+    .responsive {
+        width: 100%;
+        height: auto;
     }
+    .images {
+        display: none;    
+    }
+    .join-now {
+        background-color: #4bb941;
+        border: none;
+        border-radius: 0.75rem;
+        color: white;
+        padding: 1rem 3rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2rem 0rem;
+        cursor: pointer;
+    }
+    .header-section {
+        height: 100vh;
+        background-image: url('../assets/images/pay-with-card.jpg');
+        background-position-x: 25%;
+        justify-content: flex-end;
+    }  
     .hero-header {
         max-width: 376px;
-        padding: 1.75rem;
+        padding: 2.5rem;
         text-align: center;
         background-size: contain;
         align-items: flex-end;
@@ -602,29 +571,20 @@ PUBLICATIONS HTML
         font-size: 40px;
         padding: 0rem;
     }
-    .hero-header h4 {
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 1rem 0rem;
+    h1.heading {
+        font-size: 32px;
+        color: #7dd830;
+        padding-bottom: 0.5rem;
     }
     .section {
         max-width: 376px;
         padding: 1rem;
-    }
-    .images {
-        padding: 1rem 2.5rem;
     }
     .section-1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 5rem;
-    }
-    .heading {
-        font-size: 36px;
-        color: #4bb941;
-        padding-bottom: 0.5rem;
     }
     .heading-content {
         font-weight: 100;
@@ -643,74 +603,41 @@ PUBLICATIONS HTML
         margin-top: 2.5rem;
     }
     .section-4 {
-        width: 75%;
         box-shadow: none;
         margin-top: 2.5rem;
         background-color: #ffffff;
-        margin: 2rem;
     }
     .section-4 img {
         width: 400px;
     }
-    .coming-soon p {
-        font-size: 36px;
-    }
-    /* PUBLICATIONS QUERY */
-    .main-header-section {
-        width: 100vw;
-        margin-top: 83px;
-        padding: 10rem 0rem 5rem 0rem;
-        text-align: center;
-        background: #efefef;
-        margin-bottom: 5rem;
-    }
-    .main-hero-header h1 {
-        font-size: 40px;
+    .coming-soon {
         color: #4bb941;
+        font-size: 48px;
+        font-weight: 500;
     }
-    .main-hero-header h4 {
-        font-size: 22px;
-        color: #000000;
+    .special-details {
+        font-size: 24px;
+        padding-bottom: 1rem;
+        margin: 0rem 2rem;
     }
-    .prosperity-subheading {
-        max-width: 250px;
-        font-size: 15px
+    .special-list {
+        margin: 0rem 2rem;
+        padding: 0.30rem 0rem;
+        font-weight: bold;
+        font-size: 15px; 
     }
-    .prosperity-details {
-        font-size: 12px;
+    .section-5 {
+        flex-direction: column;
+        padding: 2rem 0rem;
     }
-    .article-heading {
+    .section-5a {
         text-align: center;
-        max-width: 1200px;
-        border-radius: 0;
-        padding: 2rem;
+        padding: 1rem;
     }
-    .article-heading h1 {
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: 500;
+    .section-5b {
+        text-align: center;
     }
-    .article-content {
-        margin-top: 0;
-        box-shadow: none;
-    }
-    .interview-content {
-        padding: 1rem 0.25rem;
-    }
-    .interview-content p {
-        padding: 0.5rem 0rem;
-    }
-    /* CONTACT US */
-    .contact-heading {
-        margin: 5rem 0rem;
-        padding: 2.55rem 5rem;
-    }
-    .contact-heading h1,
-    .contact-heading p {
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: 500;
-    }
+   
 }
 
 
@@ -753,44 +680,54 @@ PUBLICATIONS HTML
     footer p {
         font-size: 14px;
     }
+    .join-now {
+        background-color: #4bb941;
+        border: none;
+        border-radius: 0.75rem;
+        color: white;
+        padding: 1rem 3rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2rem 0rem;
+        cursor: pointer;
+      }
     .header-section {
-        height: 75vh;
-    }
+        height: 100vh;
+        background-image: url('../assets/images/pay-with-card.jpg');
+        background-position-x: 5%;
+        justify-content: flex-end;
+    }    
     .hero-header {
-        max-width: 700px;
-        padding: 1.75rem;
+        max-width: 376px;
+        padding: 2.5rem;
         text-align: center;
         background-size: contain;
         align-items: flex-end;
     }
     .hero-header h1 {
         color: #ffffff;
-        font-size: 40px;
+        font-size: 38px;
         padding: 0rem;
     }
-    .hero-header h4 {
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 1rem 0rem;
+    h1.heading {
+        font-size: 32px;
+        color: #7dd830;
+        padding-bottom: 0.5rem;
     }
     .section {
         max-width: 700px;
         padding: 2rem 1rem;
     }
     .images {
-        padding: 1rem 2.5rem;
+        display: none;
     }
     .section-1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 5rem;
-    }
-    .heading {
-        font-size: 36px;
-        color: #4bb941;
-        padding-bottom: 0.5rem;
     }
     .heading-content {
         font-weight: 100;
@@ -813,76 +750,44 @@ PUBLICATIONS HTML
         box-shadow: none;
         margin-top: 2.5rem;
         background-color: #ffffff;
-        margin: 2rem;
     }
     .section-4 img {
         width: 400px;
     }
-    .coming-soon p {
-        font-size: 36px;
-    }
-    /* PUBLICATIONS QUERY */
-    .main-header-section {
-        width: 100vw;
-        margin-top: 83px;
-        padding: 10rem 0rem 5rem 0rem;
-        text-align: center;
-        background: #efefef;
-        margin-bottom: 5rem;
-    }
-    .main-hero-header h1 {
-        font-size: 40px;
+    .coming-soon {
         color: #4bb941;
+        font-size: 48px;
+        font-weight: 500;
     }
-    .main-hero-header h4 {
-        font-size: 22px;
-        color: #000000;
+    .special-details {
+        font-size: 24px;
+        padding-bottom: 1rem;
+        margin: 0rem 2rem;
     }
-    .prosperity-subheading {
-        max-width: 250px;
-        font-size: 15px
+    .special-list {
+        margin: 0rem 2rem;
+        padding: 0.30rem 0rem;
+        font-weight: bold;
+        font-size: 15px; 
     }
-    .prosperity-details {
-        font-size: 12px;
+    .section-5 {
+        flex-direction: column;
+        padding: 2rem 0rem;
     }
-    .article-heading {
+    .section-5a {
         text-align: center;
-        max-width: 1200px;
-        border-radius: 0;
-        padding: 2rem;
+        padding: 1rem;
     }
-    .article-heading h1 {
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: 500;
+    .section-5b {
+        text-align: center;
     }
-    .article-content {
-        margin-top: 0;
-        box-shadow: none;
-    }
-    .interview-content {
-        padding: 1rem 0.25rem;
-    }
-    .interview-content p {
-        padding: 0.5rem 0rem;
-    }
-    /* CONTACT US */
-    .contact-heading {
-        margin: 5rem 0rem;
-        padding: 2.55rem 5rem;
-    }
-    .contact-heading h1,
-    .contact-heading p {
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: 500;
-    }
+    
 }
 
 
 /* Medium devices (tablets, less than 992px) */
 
-@media (max-width: 991.98px) and (min-width: 768px) {
+@media (max-width: 991.98px) and (min-width: 767.99px) {
     nav ul li.nav-items {
         width: 100%;
         display: none;
@@ -919,44 +824,58 @@ PUBLICATIONS HTML
     footer p {
         font-size: 14px;
     }
+    .join-now {
+        background-color: #4bb941;
+        border: none;
+        border-radius: 0.75rem;
+        color: white;
+        padding: 1rem 3rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2rem 0rem;
+        cursor: pointer;
+      }
     .header-section {
-        height: 75vh;
-    }
+        height: 100vh;
+        background-image: url('../assets/images/pay-with-card.jpg');
+        background-position-x: 55%;
+        justify-content: flex-end;
+    }    
     .hero-header {
-        max-width: 768px;
-        padding: 1.75rem;
+        max-width: 376px;
+        padding: 2.5rem;
         text-align: center;
         background-size: contain;
         align-items: flex-end;
     }
     .hero-header h1 {
         color: #ffffff;
-        font-size: 40px;
+        font-size: 38px;
         padding: 0rem;
     }
-    .hero-header h4 {
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 1rem 0rem;
+    h1.heading {
+        font-size: 32px;
+        color: #7dd830;
+        padding-bottom: 2.5rem;
     }
     .section {
         max-width: 768px;
         padding: 2rem;
     }
     .images {
-        padding: 1rem 2.5rem;
+        /* padding: 1rem 2.5rem; */
+    }
+    .responsive {
+        width: 50%;
+        height: auto;
     }
     .section-1 {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         margin-top: 5rem;
-    }
-    .heading {
-        font-size: 36px;
-        color: #4bb941;
-        padding-bottom: 0.5rem;
     }
     .heading-content {
         font-weight: 100;
@@ -965,12 +884,12 @@ PUBLICATIONS HTML
         text-justify: inter-word;
     }
     .section-2 {
-        flex-direction: column;
+        /* flex-direction: column; */
         box-shadow: none;
         margin-top: 2.5rem;
     }
     .section-3 {
-        flex-direction: column;
+        flex-direction: row;
         box-shadow: none;
         margin-top: 2.5rem;
     }
@@ -984,177 +903,32 @@ PUBLICATIONS HTML
     .section-4 img {
         width: 400px;
     }
-    .coming-soon p {
-        font-size: 36px;
-    }
-    /* PUBLICATIONS QUERY */
-    .main-header-section {
-        width: 100vw;
-        margin-top: 83px;
-        padding: 10rem 0rem 5rem 0rem;
-        text-align: center;
-        background: #efefef;
-        margin-bottom: 5rem;
-    }
-    .main-hero-header h1 {
-        font-size: 40px;
+    .coming-soon {
         color: #4bb941;
-    }
-    .main-hero-header h4 {
-        font-size: 22px;
-        color: #000000;
-    }
-    .article-heading {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        max-width: 1200px;
-        border-radius: 0;
-        padding: 2rem;
-    }
-    .article-heading h1 {
-        font-size: 36px;
-        color: #ffffff;
+        font-size: 48px;
         font-weight: 500;
     }
-    .prosperity-subheading {
-        align-self: center;
-        max-width: 350px;
-        font-size: 20px
-    }
-    .prosperity-details {
-        font-size: 16px;
-    }
-    .article-content {
-        margin-top: -1rem;
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    }
-    .interview-content {
-        padding: 1rem 0.25rem;
-    }
-    .interview-content p {
-        padding: 0.5rem 0rem;
-    }
-    /* CONTACT US */
-    .contact-heading {
-        margin: 5rem 0rem;
-        padding: 2.55rem 5rem;
-    }
-    .contact-heading h1,
-    .contact-heading p {
+    .special-details {
         font-size: 24px;
-        color: #ffffff;
-        font-weight: 500;
+        padding-bottom: 1rem;
+        margin: 0rem 2rem;
     }
-}
-
-
-/* Large devices (desktops, less than 1200px) */
-
-
-/* @media (max-width: 1199.98px) {
-    nav ul li.nav-items {
-        width: 100%;
-        display: none;
-        margin: 0;
+    .special-list {
+        margin: 0rem 2rem;
+        padding: 0.30rem 0rem;
+        font-weight: bold;
+        font-size: 15px; 
     }
-    nav ul li.nav-items.show {
-        display: block;
+    .section-5 {
+        flex-direction: column;
+        padding: 2rem 0rem;
     }
-    nav ul li.btn {
-        display: block;
-    }
-    nav ul li.nav-items:hover:after {
-        opacity: 0;
-    }
-    nav ul li.logo {
-        flex: 1;
-    }
-    .nav-bar {
-        padding: 0rem 1rem;
-    }
-    header {
-        margin: 0 0 .5rem 0;
-    }
-    main p {
-        font-size: 16px;
-    }
-    p {
-        font-size: 16px;
-    }
-    footer {
-        margin-top: 5rem;
-        min-height: 12rem;
-    }
-    footer p {
-        font-size: 14px;
-    }
-    .header-section {
-        height: 75vh;
-    }
-    .hero-header {
-        max-width: 900px;
-        padding: 1.75rem;
+    .section-5a {
         text-align: center;
-        background-size: contain;
-        align-items: flex-end;
+        padding: 1rem;
     }
-    .hero-header h1 {
-        color: #ffffff;
-        font-size: 40px;
-        padding: 0rem;
+    .section-5b {
+        text-align: center;
     }
-    .hero-header h4 {
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 1rem 0rem;
-    }
-    .section {
-        max-width: 900px;
-        padding: 2rem;
-    }
-    .images {
-        padding: 1rem 2.5rem;
-    }
-    .section-1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5rem;
-    }
-    .heading {
-        font-size: 36px;
-        color: #4bb941;
-        padding-bottom: 0.5rem;
-    }
-    .heading-content {
-        font-weight: 100;
-        font-size: 16px;
-        text-align: justify;
-        text-justify: inter-word;
-    }
-    .section-2 {
-        flex-direction: column;
-        box-shadow: none;
-        margin-top: 2.5rem;
-    }
-    .section-3 {
-        flex-direction: column;
-        box-shadow: none;
-        margin-top: 2.5rem;
-    }
-    .section-4 {
-        width: 75%;
-        box-shadow: none;
-        margin-top: 2.5rem;
-        background-color: #ffffff;
-        margin: 2rem;
-    }
-    .section-4 img {
-        width: 400px;
-    }
-    .coming-soon p {
-        font-size: 36px;
-    }
-} */
+    
+}
